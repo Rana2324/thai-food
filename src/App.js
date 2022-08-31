@@ -1,25 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import './index.css';
+import Header from './components/Header/Header';
+// import OwlCorousal from './components/OwlCorousal/OwlCorousal';
+import HikiNikuRecipe from './components/HikiNikuRecipe/HikiNikuRecipe';
+import Footer from './components/Footer/Footer';
+import MoreItems from './components/MoreItems/MoreItems';
+import Milkits from './components/Milkits/Milkits';
+import NewMilkits from './components/NewMilkits/NewMilkits';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <MoreItems/>
+       <HikiNikuRecipe/>
+       <Milkits/>
+       <NewMilkits/>
+     
+
+      <Footer/>
+      
     </div>
   );
 }
+
+
 
 export default App;
